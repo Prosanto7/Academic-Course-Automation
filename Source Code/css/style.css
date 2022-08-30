@@ -1,0 +1,87 @@
+.bg-dark-blue {
+    background-color: #002147;
+}
+
+.text-light {
+    color: #ffffff;
+}
+
+nav {
+    border-bottom: 5px solid #ffb606;
+}
+
+footer {
+    border-top: 5px solid #ffb606;
+    margin-top: auto;
+}
+
+.footer-ul {
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #ffb606;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+
+.footer-bottom {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #ffb606;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+}
+
+.btn-primary{
+    background-color: #002147;
+}
+
+.form-label{
+    font-weight: bolder;
+}
+
+
+td {
+    font-weight: 700;
+}
+
+.right{
+    text-align: right;
+}
+
+.student-record {
+    float: left;
+    border: 1px solid grey;
+    margin: 2px;
+    padding: 4px;
+    width: 175px;
+    text-align: center;
+}
