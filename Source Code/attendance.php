@@ -11,7 +11,10 @@
     ?> 
 
     <div class="container mt-3">
-        <h1>Hi Prosanto!</h1>
+        <h1>Hi <?php
+            session_start();
+            echo $_SESSION['user']->name;
+            ?>!</h1>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#instructionsModal">
             Instructions!
         </button>
