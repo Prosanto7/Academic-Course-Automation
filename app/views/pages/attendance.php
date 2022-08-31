@@ -6,7 +6,7 @@
             Instructions!
         </button>
 
-        <button type="button" class="btn btn-primary" onclick="submitData()">
+        <button type="button" class="btn btn-primary" onclick="location.href='<?php echo URLROOT; ?>/pages/index';">
             Submit Attendance
         </button>
 
