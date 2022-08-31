@@ -1,5 +1,9 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
 
+<?php 
+flash('register_success');
+?>
+
 <div class="container mt-5">
     <table class="table table-bordered table-striped">
         <thead>
@@ -21,7 +25,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <input type="submit" value="Login" class="btn btn-success btn-block">
+                            <input type="submit" value="Login" class="btn btn-primary btn-block">
                         </div>
                         <div class="col">
                             <a href="<?php echo URLROOT; ?>/users/signup" class="btn btn-primary pull-right">No account? Register</a>

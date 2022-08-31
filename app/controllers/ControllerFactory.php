@@ -9,7 +9,7 @@ class ControllerFactory {
             return new UsersController();
         }else{
             //default if not match any
-            return new PagesController();
+            return new UsersController();
         }
     }
 
