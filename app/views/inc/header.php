@@ -5,16 +5,16 @@
     <title>Academic Course Automation</title>
 
     <!-- Webpage Icon -->
-    <link rel="icon" href="res/favicon.png" type="image/png">
+    <link rel="icon" href="<?php echo URLROOT; ?>/res/favicon.png" type="image/png">
 
     <!-- Bootstrap Srouce Code -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/bootstrap.min.css">
 
     <!-- Bootstrap Bundle Js -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo URLROOT; ?>/js/bootstrap.bundle.min.js"></script>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/style.css">
     
     <!-- External JavaScript -->
     <script>
@@ -29,3 +29,7 @@
         }
     </script>
 </head>
+
+<body>
+
+<?php require_once APPROOT.'/views/inc/navbar.php';?>

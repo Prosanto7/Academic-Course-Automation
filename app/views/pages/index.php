@@ -1,20 +1,7 @@
-<?php
-    require_once('header.php');
-?>
-
-<!-- Body Starts -->
-
-<body>
-
-    <?php
-        require_once('teacher-navbar.php');
-    ?> 
+<?php require APPROOT . '/views/inc/header.php'; ?>
 
     <div class="container mt-3">
-        <h1>Hi <?php
-            session_start();
-            echo $_SESSION['user']->name;
-            ?>!</h1>
+        <h1>Hi <?php echo $_SESSION['user_name']; ?>!</h1>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createClassModal">
             Create New Class
         </button>
@@ -105,7 +92,7 @@
                         </tr>
                     </table>  
                 </div>
-                <div class="card-footer bg-dark-blue"><a class="nav-link" href="attendance.php" >Attendance</a></div>
+                <div class="card-footer bg-dark-blue"><a class="nav-link" href="<?php echo URLROOT; ?>/pages/attendance" >Attendance</a></div>
             </div>
         </div>
 
@@ -135,7 +122,7 @@
                         </tr>
                     </table> 
                 </div>
-                <div class="card-footer bg-dark-blue"><a class="nav-link" href="attendance.php" >Attendance</a></div>
+                <div class="card-footer bg-dark-blue"><a class="nav-link" href="<?php echo URLROOT; ?>/pages/attendance" >Attendance</a></div>
             </div>
         </div>
 
@@ -165,17 +152,12 @@
                         </tr>
                     </table> 
                 </div>
-                <div class="card-footer bg-dark-blue"><a class="nav-link" href="attendance.php" >Attendance</a></div>
+                <div class="card-footer bg-dark-blue"><a class="nav-link" href="<?php echo URLROOT; ?>/pages/attendance" >Attendance</a></div>
             </div>
         </div>
 
     </div>
 
-
-    
-</body>
 <!-- Body Ends -->
 
-<?php
-    require_once('footer.php');
-?> 
+<?php require APPROOT . '/views/inc/footer.php'; ?>

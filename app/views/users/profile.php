@@ -1,14 +1,4 @@
-<?php
-    require_once('header.php');
-?>
-
-<!-- Body Starts -->
-
-<body>
-
-    <?php
-        require_once('teacher-navbar.php');
-    ?> 
+<?php require APPROOT . '/views/inc/header.php'; ?>
 
 <div class="container mt-5 mb-5">
     <div class="wrapper">
@@ -38,6 +28,4 @@
 </body>
 <!-- Body Ends -->
 
-<?php
-    require_once('footer.php');
-?>
+<?php require APPROOT . '/views/inc/footer.php'; ?>

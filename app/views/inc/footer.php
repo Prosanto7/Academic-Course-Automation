@@ -1,3 +1,5 @@
+</body>
+
 <!-- Footer Starts -->
 <footer class="bg-dark-blue text-light" id="contact">
     <!-- Footer Body Starts -->
@@ -11,9 +13,9 @@
                     Noakhali-3814, Bangladesh
                 </p>
                 
-                <img src="res/envelope.png" width="20px"> 
+                <img src="<?php echo URLROOT; ?>/res/envelope.png" width="20px">
                 <a href="mailto:iit@nstu.edu.bd">iit@nstu.edu.bd</a> <br>
-                <img src="res/call.png" width="20px"> 
+                <img src="<?php echo URLROOT; ?>/res/call.png" width="20px">
                 <a href="tel:01883-009900">01883-009900</a>                       
             </div>
         </div>

@@ -14,11 +14,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav" style="margin-left: auto;">
-                            <li class="nav-item"><a class="nav-link" href="teacher.php">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="profile.php">Profile</a></li>
-                            <li class="nav-item"><a class="nav-link" href="statistics.php">Statistics</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/index.php">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../users/profile.php">Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/statistics.php">Statistics</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.php">Logout</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../users/index.php">Logout</a></li>
                         </ul>
                 </div>
             </div>
