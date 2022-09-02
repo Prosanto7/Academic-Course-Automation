@@ -14,7 +14,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" style="margin-left: auto;">
-                        <li class="nav-item"><a class="nav-link" href="<?php echo URLROOT; ?>/pages/index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo URLROOT; ?>/courses/index">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?php echo URLROOT; ?>/pages/student">Student Dashboard</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?php echo URLROOT; ?>/users/profile">Profile</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?php echo URLROOT; ?>/pages/statistics">Statistics</a></li>

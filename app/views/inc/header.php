@@ -15,6 +15,8 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/style.css">
+
+    <script src="<?php echo URLROOT; ?>/js/jquery.min.js"></script>
     
     <!-- External JavaScript -->
     <script>

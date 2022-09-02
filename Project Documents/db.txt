@@ -1,0 +1,11 @@
+create TABLE courses(
+	course_id int AUTO_INCREMENT,
+	title varchar(255),
+	code varchar(255),
+	credit varchar(255),
+	session varchar(255),
+	semester varchar(255),
+
+    PRIMARY KEY(course_id)
+)
+

@@ -5,19 +5,6 @@ class PagesController extends Controller {
     public function __construct() {
     }
 
-    public function index(){
-
-        if(!isLoggedIn()){
-            redirect('users/login');
-        }
-
-        $data=[
-
-        ];
-
-        $this->view('/pages/index',$data);
-    }
-
     public function attendance(){
 
         if(!isLoggedIn()){

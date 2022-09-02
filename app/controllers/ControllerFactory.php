@@ -7,6 +7,8 @@ class ControllerFactory {
             return new PagesController();
         } elseif (strtolower($controllerName)=="users"){
             return new UsersController();
+        }elseif (strtolower($controllerName)=="courses"){
+            return new CourseController();
         }else{
             //default if not match any
             return new UsersController();
