@@ -15,7 +15,8 @@ class CourseController extends Controller {
         }
 
         $data=[
-
+            'batches'=>$this->courseModel->getAllBatches(),
+            'courses'=>$this->courseModel->getCurrentUserCourses()
         ];
 
         $this->view('/courses/index',$data);
@@ -27,15 +28,30 @@ class CourseController extends Controller {
             redirect('users/login');
         }
 
-        /*header('Content-type: application/json');
-        $json = file_get_contents('php://input');
-        $json_decode = json_decode($json, true);*/
+        $_POST['code']=strtoupper($_POST['code']);
 
         $data=$this->courseModel->add($_POST);
+
+
 
         if($data){
             echo json_encode($data);
         }
+    }
+
+    public function delete($id){
+
+        if(!isLoggedIn()){
+            redirect('users/login');
+        }
+
+        if($this->courseModel->delete($id)){
+            flash('courses_index','Course deleted');
+            redirect('courses');
+        }
+
+
+
     }
 
 

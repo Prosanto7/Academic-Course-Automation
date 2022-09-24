@@ -12,4 +12,5 @@ require_once 'controllers/ControllerFactory.php';
 require_once 'controllers/PagesController.php';
 require_once 'controllers/CourseController.php';
 require_once 'controllers/UsersController.php';
+require_once 'controllers/AdminsController.php';
 

@@ -15,7 +15,7 @@ class Core {
 
         //by default
         $this->currentController=ControllerFactory::getInstance("users");
-        $this->currentMethod="login";
+        $this->currentMethod="index";
 
 
         //not by default

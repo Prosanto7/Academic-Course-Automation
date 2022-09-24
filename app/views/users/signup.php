@@ -40,7 +40,7 @@
                                 <input type="submit" value="Register" class="btn btn-primary btn-block">
                             </div>
                             <div class="col">
-                                <a href="<?php echo URLROOT; ?>/users/login" class="btn btn-primary pull-right">Have an account? Login</a>
+                                <a href="<?php echo URLROOT; ?>/users/" class="btn btn-primary pull-right">Have an account? Login</a>
                             </div>
                         </div>
 

@@ -34,7 +34,7 @@ class User {
                                 values (:name,:phone,:email,:password)");
 
         $this->db->bind(':name',$data['name']);
-        $this->db->bind(':phone', $_POST['phone']);
+        $this->db->bind(':phone', $data['phone']);
         $this->db->bind(':email',$data['email']);
         $this->db->bind(':password',$data['password']);
 
@@ -54,12 +54,30 @@ class User {
         $hashed_password=$row->pass_hash;
 
         if(password_verify($password,$hashed_password)){
-            //die('varified '.$password);
+            //die('varified '.print_r($row));
             return $row;
         }else{
             //die('invalid '.$password);
             return false;
         }
+    }
+
+    public function updateInfo($data){
+        $this->db->query('update users set name=:name, phone=:phone, email=:email where user_id=:user_id');
+
+        $this->db->bind(':name',$data['name']);
+        $this->db->bind(':phone', $data['phone']);
+        $this->db->bind(':email',$data['email']);
+        $this->db->bind(':user_id',$_SESSION['user_id']);
+
+        if($this->db->execute()){
+            $_SESSION['user_name']=$data['name'];
+            $_SESSION['user_phone']=$data['phone'];
+            $_SESSION['user_email']=$data['email'];
+        }
+
+
+
     }
 
 

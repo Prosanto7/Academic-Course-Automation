@@ -85,7 +85,7 @@ class UsersController extends Controller {
         }
     }
 
-    public function login() {
+    public function index() {
 
         if($_SERVER['REQUEST_METHOD']=='POST'){
 
@@ -140,14 +140,22 @@ class UsersController extends Controller {
     }
 
     public function createUserSession($user){
-        //$_SESSION['user_id']=$user->id;
+        $_SESSION['user_id']=$user->user_id;
         $_SESSION['user_name']=$user->name;
+        $_SESSION['user_phone']=$user->phone;
         $_SESSION['user_email']=$user->email;
-        redirect('courses/index');
+        $_SESSION['isadmin']=$user->isadmin;
+
+        if($user->isadmin){
+            redirect('admins/index');
+        }else{
+            redirect('courses/index');
+        }
+
     }
 
     public function logout(){
-        //unset($_SESSION['user_id']);
+        unset($_SESSION['user_id']);
         unset($_SESSION['user_name']);
         unset($_SESSION['user_email']);
         session_destroy();
@@ -165,6 +173,12 @@ class UsersController extends Controller {
         ];
 
         $this->view('/users/profile',$data);
+    }
+
+    public function profileEdit(){
+        $res=$this->userModel->updateInfo($_POST);
+        flash('profile','Information changed');
+        redirect('users/profile');
     }
 
 
